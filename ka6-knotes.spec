@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.02.0
+%define		kdeappsver	24.02.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		knotes
 Summary:	knotes
 Name:		ka6-%{kaname}
-Version:	24.02.0
+Version:	24.02.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	5f4e0d000cf6353e2c4d73ebb5cef66d
+# Source0-md5:	c4d2d6cf6c8d1cac28768c9c57ed2ba3
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel
@@ -24,7 +24,7 @@ BuildRequires:	Qt6Widgets-devel
 BuildRequires:	Qt6Xml-devel
 BuildRequires:	cmake >= 3.20
 BuildRequires:	gettext-devel
-BuildRequires:	grantlee-qt5-devel >= 5.1
+BuildRequires:	grantlee-qt6-devel >= 5.1
 BuildRequires:	ka6-akonadi-devel >= %{kdeappsver}
 BuildRequires:	ka6-akonadi-notes-devel >= %{kdeappsver}
 BuildRequires:	ka6-akonadi-search-devel >= %{kdeappsver}
