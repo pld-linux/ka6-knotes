@@ -13,6 +13,7 @@ License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
 # Source0-md5:	1dd5add4693cad4b9a6eefea73527735
+Patch0:		kmimemessage_include.patch
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel
@@ -80,6 +81,7 @@ programu. Właściwości: pisz notatki wybraną czcionką i kolorem tła.
 
 %prep
 %setup -q -n %{kaname}-%{version}
+%patch0 -p1
 
 %build
 %cmake \
