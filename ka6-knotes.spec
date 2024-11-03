@@ -8,7 +8,7 @@
 Summary:	knotes
 Name:		ka6-%{kaname}
 Version:	24.05.2
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -125,6 +125,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt6/plugins/pim6/kcms/knotes/kcm_knote_misc.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/pim6/kcms/knotes/kcm_knote_network.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/pim6/kcms/knotes/kcm_knote_print.so
+%dir %{_libdir}/qt6/plugins/pim6/kcms/summary
 %attr(755,root,root) %{_libdir}/qt6/plugins/pim6/kcms/summary/kcmknotessummary.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/pim6/kontact/kontact_knotesplugin.so
 %{_datadir}/akonadi/agents/notesagent.desktop
